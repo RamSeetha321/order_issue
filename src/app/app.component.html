@@ -1,0 +1,40 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div style="text-align:left;width:200px;">
+    <div class="container">
+        <div class="order">
+          <h2>Order status</h2>
+
+  <table *ngIf="arrBirds">
+      <!-- ADD HEADERS -->
+      <tr>
+          <th>Order ID</th>
+              <th>Item Name</th>
+                  <th>Process</th>
+      </tr>
+
+      <!-- BIND ARRAY TO TABLE -->
+      <tr *ngFor="let order of arrBirds">
+        <td>{{order.ID}}</td>
+        <td>{{order.Name}}</td>
+        <td>{{order.Type}}</td>
+      </tr>
+  </table> 
+  </div><br>
+        <div class="solution">
+          <p><a href="#">problem with the current order?</a></p><br>
+          <p><a href="#">cancel the order?</a></p><br>
+          <p><a href="#">problem with the past order?</a></p><br>
+          <p><a href="#">Help?</a></p><br>
+          </div>
+          <div class="row">
+            <div class="col-sm-6" >Chat Us<i class="fa fa-comments-o" style="font-size:36px"></i></div>
+            <div class="col-sm-6" ><i class="fa fa-phone" style="font-size:24px"></i>Contact Us</div>
+          </div>
+          <br>
+          <div class="center">
+            <p><b>Note:</b>The order cancellation process should be confirmed by the Farm only.<br>Then process will be done successfully</p><br>  
+          
+</div>
+</div>
+</div>
